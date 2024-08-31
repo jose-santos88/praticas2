@@ -20,7 +20,7 @@ function Titulo(texto) {
     return h1;
 }
 
-function Icone(origem, texto) {
+function ImageComponent(origem, texto) {
     const img = document.createElement("img");
     img.setAttribute("src", origem);
     img.setAttribute("alt", texto);
@@ -32,7 +32,7 @@ function Input(id, tipo, rotulo) {
     label.setAttribute("for", id);
     label.innerText = rotulo;
     const input = document.createElement("input");
-    input.setAttribute("type", tipo);
+    input.setAttribute("type", id);
     input.setAttribute("id", id);
     input.setAttribute("name", id);
     const div = document.createElement("div");
@@ -63,25 +63,25 @@ function FormLogin() {
     const form = document.createElement("form");
     form.setAttribute("action", "/login");
     form.setAttribute("method", "post");
-    const inputEmail = Input("email", "email", "E-mail");
-    const inputSenha = Input("senha", "password", "Senha");
-    const inputEntrar = InputSubmit("Entrar");
+    const inputEmail = input("email", "email", "E-mail");
+    const inputSenha = input("senha", "password", "Senha");
+    const inputEntrar = inputSubmit("Entrar");
     form.append(inputEmail, inputSenha, inputEntrar);
     form.addEventListener("submit", onLogin);
     return form;
 }
 
-function PageLogin() {
+function PageLogin(){
     const logo = Icone("https://www.svgrepo.com/show/411955/learn.svg", "Logo da Aplicação");
     const titulo = Titulo("Aluno Online");
     const form = FormLogin();
     const link = Link("/esqueceu-senha", "Esqueceu sua Senha?");
     const conteudo = Conteudo(logo, titulo, form, link);
-    conteudo.setAttribute("class", "login-container");
     const rodape = Rodape("Copyright (C) 2024");
     root.append(conteudo, rodape);
     document.title = "Login - Aluno Online";
-}
+  }
+  
 
 function Navega(rota) {
     root.innerHTML = null;
@@ -113,8 +113,7 @@ function Cabecalho() {
     grupo1.append(logo, titulo);
     const input = InputSearch();
     const icone = Icone("https://www.svgrepo.com/show/507851/search-square.svg",
-        "Ícone de Pesquisar"
-    );
+        "Ícone de Pesquisar");
     const grupo2 = document.createElement("div");
     grupo2.append(input, icone);
     const header = document.createElement("header");
@@ -124,7 +123,7 @@ function Cabecalho() {
 
 function onClickMenu(event) {
     event.preventDefault();
-    Navega(event.target.getAttribute("href"));
+    Navega(event.target.getAttributr("href"));
 }
 
 function Menu() {
@@ -212,3 +211,4 @@ function PagePerfil() {
     root.append(cabecalho, conteudo);
     document.title = "Perfil - Aluno Online";
 }
+
