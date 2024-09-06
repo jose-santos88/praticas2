@@ -1,7 +1,7 @@
-function Logo() {
-    return (
-        <img src="arquivo.svg" alt="Logo da Aplicação" />
-    );
+function Logo(props) {
+  return (
+      <img src={props.imagem} alt={props.texto} />
+  );
 }
 
 export default Logo;
