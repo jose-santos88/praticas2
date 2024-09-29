@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import InputEmail from "./InputEmail";
-import InputSenha from "./InputSenha";
-import Botao from "./Botao";
+import InputEmail from "../components/InputEmail";
+import InputSenha from "../components/InputSenha";
+import Botao from "../components/Botao";
 
 function FormLogin(props) {
     const [email, setEmail] = useState();
@@ -12,7 +12,7 @@ function FormLogin(props) {
     return (
         <form>
             <InputEmail valor={email} mudaValor={(e) => setEmail(e.target.value)} />
-            <InputSenha valor={senha} mudaValor={(e) => setSenha(e.terget.value)} />
+            <InputSenha valor={senha} mudaValor={(e) => setSenha(e.target.value)} />
             <Botao texto="Entrar" aoClicar={(e) => navigate("/home")} />
         </form>
     );

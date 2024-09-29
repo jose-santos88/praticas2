@@ -11,9 +11,10 @@ function Menu() {
             <ul>
                 {opcoes.map((opcao, index) => (
                     <li key={index}>
-                        <NavLink to={opcao.rota}>{opcao.texto</NavLink>
+                        <NavLink to={opcao.rota}>{opcao.texto}</NavLink>
                     </li>
                 ))}
+                
             </ul>
         </nav>
     );
