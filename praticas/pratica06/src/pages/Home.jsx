@@ -1,6 +1,6 @@
 import Conteudo from "../components/Conteudo";
-import Menu from "../components/Menu";
 import Titulo from "../components/Titulo";
+import Menu from "../components/Menu";
 
 function Home(props) {
     return (
