@@ -8,9 +8,9 @@ function InputEmail(props) {
   };
   return (
     <>
-      <label htmlFor="email"></label>
-      <input type="email" {...props.register("email")} />
-      {props.error && <p>{error.message}</p>}
+      <label htmlFor="email">E-mail</label>
+      <input type="email" {...props.register("email", regras)} />
+      {props.error && <p>{props.error.message}</p>}
     </>
   );
 }

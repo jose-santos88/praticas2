@@ -7,7 +7,7 @@ function InputSenha(props) {
     <>
       <label htmlFor="senha">Senha</label>
       <input type="password" {...props.register("senha", regras)} />
-      {props.error && <p>{error.message}</p>}
+      {props.error && <p>{props.error.message}</p>}
     </>
   );
 }
