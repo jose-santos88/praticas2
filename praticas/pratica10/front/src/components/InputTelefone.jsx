@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 function INputTelefone(props) {
+=======
+function InputTelefone(props) {
+>>>>>>> e5fec031cec0c676cf5114fdf6af2b51b278e0b2
     const regras = {
         required: "Telefone é obrigatório"
     }
@@ -12,4 +16,8 @@ function INputTelefone(props) {
     );
 }
 
+<<<<<<< HEAD
 export default INputTelefone;
+=======
+export default InputTelefone;
+>>>>>>> e5fec031cec0c676cf5114fdf6af2b51b278e0b2
