@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+    "contatos" : [
+        {"id": "la2b", "nome": "Jose", "telefone": "9999-9999" }
+    ]
+=======
   "contatos": [
     {
       "nome": "koreto2",
@@ -6,4 +11,5 @@
       "id": "4ada"
     }
   ]
+>>>>>>> e5fec031cec0c676cf5114fdf6af2b51b278e0b2
 }

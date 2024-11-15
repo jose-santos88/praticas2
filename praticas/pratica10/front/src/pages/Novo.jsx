@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+function Novo() {
+    return (
+        <>
+        <h1></h1>
+=======
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Conteudo from "../components/Conteudo";
@@ -25,6 +31,7 @@ function Novo() {
             <Formulario trataEnviar={trataEnviar} valores={{}} />
             {erro && <p>{erro}</p>}
         </Conteudo>
+>>>>>>> e5fec031cec0c676cf5114fdf6af2b51b278e0b2
         </>
     );
 }

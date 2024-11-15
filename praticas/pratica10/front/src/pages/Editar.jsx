@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+function Editar() {
+    return (
+        <></>
+=======
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Cabecalho from "../components/Cabecalho";
@@ -39,6 +44,7 @@ function Editar() {
             {erro && <p>{erro}</p>}
         </Conteudo>
         </>
+>>>>>>> e5fec031cec0c676cf5114fdf6af2b51b278e0b2
     );
 }
 

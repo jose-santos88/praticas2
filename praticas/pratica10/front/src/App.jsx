@@ -6,6 +6,10 @@ import Erro404 from "./pages/Erro404";
 
 function App() {
   return (
+<<<<<<< HEAD
+    <>
+=======
+>>>>>>> e5fec031cec0c676cf5114fdf6af2b51b278e0b2
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Listar />} />
@@ -14,7 +18,15 @@ function App() {
       <Route path="*" element={<Erro404 />} />
     </Routes>
     </BrowserRouter>
+<<<<<<< HEAD
+    </>
   );
 }
 
 export default App;
+=======
+  );
+}
+
+export default App;
+>>>>>>> e5fec031cec0c676cf5114fdf6af2b51b278e0b2

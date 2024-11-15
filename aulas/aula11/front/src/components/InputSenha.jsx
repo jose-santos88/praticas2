@@ -1,7 +1,11 @@
 function InputSenha(props) {
   const regras = {
     required: "Senha é obrigatório",
+<<<<<<< HEAD
     minLength: {
+=======
+    pattern: {
+>>>>>>> 7634e8f2dba6da2671135da60f91bd16e55b996c
       value: 6,
       message: "Senha deve ter pelo menos 6 caracteres",
     },
