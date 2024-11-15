@@ -8,30 +8,18 @@ function Login() {
   const navigate = useNavigate();
 
   const [msg, setMsg] = useState("");
-<<<<<<< HEAD
  
   const { login } = useContext(AuthContext);
 
   const onEntrar = async (data) => {
     const erro = await login(data);
-=======
-
-  const { login } = useContext(AuthContext);
-
-  const onEntrar = (data) => {
-    const erro = login(data);
->>>>>>> 7634e8f2dba6da2671135da60f91bd16e55b996c
     if (!erro) {
       setMsg("");
       navigate("/home");
     } else {
       setMsg(erro);
     }
-<<<<<<< HEAD
   }
-=======
-  };
->>>>>>> 7634e8f2dba6da2671135da60f91bd16e55b996c
 
   return (
     <>

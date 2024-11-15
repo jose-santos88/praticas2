@@ -20,11 +20,7 @@ function AuthProvider(props) {
       });
       return "";
     } else {
-<<<<<<< HEAD
       return resposta.mensagem;
-=======
-      return "Login inválido";
->>>>>>> 7634e8f2dba6da2671135da60f91bd16e55b996c
     }
   };
 
@@ -36,7 +32,6 @@ function AuthProvider(props) {
     });
   };
 
-<<<<<<< HEAD
   const registrar = async (dados) => {
     const resposta = await cadastrar(dados);
     if (resposta.sucesso) {
@@ -49,14 +44,6 @@ function AuthProvider(props) {
     } else {
       return resposta.mensagem;
     }
-=======
-  const registrar = (dados) => {
-    setUsuario({
-      email: dados.email,
-      logado: true,
-      token: "1a2b3c4d",
-    });
->>>>>>> 7634e8f2dba6da2671135da60f91bd16e55b996c
   };
 
   const context = { usuario, login, logout, registrar };
