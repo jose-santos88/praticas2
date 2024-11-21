@@ -1,6 +1,10 @@
 {
   "name": "back",
   "version": "1.0.0",
+<<<<<<< HEAD
+=======
+  "description": "",
+>>>>>>> 3496c1eed4443ce8e23a194ad31dd72622dd7ad6
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,7 +12,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "description": "",
+=======
+>>>>>>> 3496c1eed4443ce8e23a194ad31dd72622dd7ad6
   "dependencies": {
     "json-server": "^0.17.4",
     "json-server-auth": "^2.1.0"

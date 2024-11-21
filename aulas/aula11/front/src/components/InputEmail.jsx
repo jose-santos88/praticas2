@@ -9,7 +9,11 @@ function InputEmail(props) {
 
   return (
     <>
+<<<<<<< HEAD
+      <label htmlFor="email">E-mail:</label>
+=======
       <label htmlFor="email">E-mail</label>
+>>>>>>> 7634e8f2dba6da2671135da60f91bd16e55b996c
       <input type="email" {...props.register("email", regras)} />
       {props.error && <p>{props.error.message}</p>}
     </>

@@ -1,3 +1,13 @@
 {
+<<<<<<< HEAD
+  "users": [
+    {
+      "email": "jose@iesb.br",
+      "password": "$2a$10$sL/vg7YpkElhduRuI69UAej55EnXQb2SoSmsM9yK09/34neU7FNry",
+      "id": 1
+    }
+  ]
+=======
     "users": []
+>>>>>>> 7634e8f2dba6da2671135da60f91bd16e55b996c
 }

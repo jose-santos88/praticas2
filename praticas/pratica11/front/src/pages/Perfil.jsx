@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import AutContext from "../contexts/AuthContext";
@@ -29,3 +30,12 @@ function Perfil() {
 }
 
 export default Perfil;
+=======
+function Perfil() {
+    return (
+        <h1>Perfil</h1>
+    );
+}
+
+export default Perfil;
+>>>>>>> 3496c1eed4443ce8e23a194ad31dd72622dd7ad6

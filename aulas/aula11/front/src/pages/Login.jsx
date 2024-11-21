@@ -8,18 +8,18 @@ function Login() {
   const navigate = useNavigate();
 
   const [msg, setMsg] = useState("");
-
+ 
   const { login } = useContext(AuthContext);
 
-  const onEntrar = (data) => {
-    const erro = login(data);
+  const onEntrar = async (data) => {
+    const erro = await login(data);
     if (!erro) {
       setMsg("");
       navigate("/home");
     } else {
       setMsg(erro);
     }
-  };
+  }
 
   return (
     <>
@@ -32,3 +32,4 @@ function Login() {
 }
 
 export default Login;
+

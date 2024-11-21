@@ -9,7 +9,10 @@ function Formulario(props) {
     handleSubmit,
     formState: { errors },
   } = useForm({ values: props.valores });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3496c1eed4443ce8e23a194ad31dd72622dd7ad6
   return (
     <form onSubmit={handleSubmit(props.onEnviar)}>
       <InputEmail register={register} error={errors.email} />
@@ -19,4 +22,8 @@ function Formulario(props) {
   );
 }
 
+<<<<<<< HEAD
 export default Formulario;
+=======
+export default Formulario;
+>>>>>>> 3496c1eed4443ce8e23a194ad31dd72622dd7ad6
