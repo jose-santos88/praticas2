@@ -1,7 +1,6 @@
 import { useState, useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthContext";
-<<<<<<< HEAD
 import Formulario from "./Formulario";
 
 function Registrar() {
@@ -29,14 +28,3 @@ function Registrar() {
 }
 
 export default Registrar;
-=======
-
-function Registrar() {
-    const [erro, setErro] = useState("");  //letra e da atividade 9
-    return (
-        <h1>Registrar</h1>
-    );
-}
-
-export default Registrar;
->>>>>>> 3496c1eed4443ce8e23a194ad31dd72622dd7ad6

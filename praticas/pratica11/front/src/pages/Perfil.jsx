@@ -1,14 +1,13 @@
-<<<<<<< HEAD
 import { useState, useContext } from "react";
 import { useParams } from "react-router-dom";
-import AutContext from "../contexts/AuthContext";
+import {AuthContext} from "../contexts/AuthContext";
 import Menu from "../components/Menu";
 import Formulario from "../pages/Formulario";
 
 function Perfil() {
   const [erro, setErro] = useState("");
   const { id } = useParams();
-  const { usuario, update } = useContext(AutContext);
+  const { usuario, update } = useContext(AuthContext);
   const onSalvar = async (data) => {
     const resultado = await update({ id, ...data });
     if (resultado) {
@@ -30,12 +29,3 @@ function Perfil() {
 }
 
 export default Perfil;
-=======
-function Perfil() {
-    return (
-        <h1>Perfil</h1>
-    );
-}
-
-export default Perfil;
->>>>>>> 3496c1eed4443ce8e23a194ad31dd72622dd7ad6

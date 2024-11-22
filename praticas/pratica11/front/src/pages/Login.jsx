@@ -1,12 +1,7 @@
 import { useState, useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
-<<<<<<< HEAD
-import AuthContext from "../pages/Formulario";
+import {AuthContext} from "../contexts/AuthContext";
 import Formulario from "../pages/Formulario";
-=======
-import { AuthContext } from "../contexts/AuthContext";
-import Formulario from "./Formulario";
->>>>>>> 3496c1eed4443ce8e23a194ad31dd72622dd7ad6
 
 function Login() {
   const [erro, setErro] = useState("");
@@ -25,11 +20,7 @@ function Login() {
   return (
     <>
       <h1>Login</h1>
-<<<<<<< HEAD
       {erro && <p>{erro}</p>}
-=======
-      {erro && <p>{errp}</p>}
->>>>>>> 3496c1eed4443ce8e23a194ad31dd72622dd7ad6
       <Formulario onEnviar={onEntrar} texto="Entrar" />
       <Link to="/registrar">Registrar</Link>
     </>
